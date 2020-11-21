@@ -7,8 +7,9 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
+  faMedium,
   faTwitch,
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faLinkedin, faGithub, faTwitter, faTwitch);
+library.add(faLinkedin, faGithub, faTwitter, faTwitch, faMedium);
 dom.watch();
