@@ -5,24 +5,34 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Alexander Troup</title>
-  <script src="../dist/main.js"></script>
+  <script src="main.js"></script>
 </head>
 
 <body>
   {{> organisms/navigation }}
-  <img src="url(../images/profile-picture.jpg)" class="img-fluid" alt"Picture of Alexander Troup" aria-hidden="true">
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-12 no-gutters">
+        <img src="images/profile-picture.jpg" class="img-fluid" alt="Picture of Alexander Troup" aria-hidden="true" />
+      </div>
+    </div>
   </div>
   <main class="container">
     <header>
       <h1>About Me</h1>
     </header>
-    
+
     <main>
       <p>
-     This will be some real text later on, but right now it's just filler, much like the Picard series. 
+        I am a freelance Software Developer and streamer.
+      </p>
+      <p>
+        I've been a professional developer for well over a decade. I've worked across a range of stacks and companies to
+        the point I know the industry pretty well. My aim as a streamer is to share the knowledge I've accrued and
+        demystify some of the questions around how to have a career in tech.
       </p>
     </main>
-    
+
   </main>
   {{> organisms/footer }}
 </body>

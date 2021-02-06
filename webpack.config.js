@@ -7,6 +7,7 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "/dist/",
+    assetModuleFilename: "images/[name][ext][query]",
   },
   module: {
     rules: [
@@ -20,22 +21,22 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
-        type: 'asset/resource',
+        type: "asset/resource",
+        // generator: {
+        //   filename: "images/[name][ext][query]",
+        // },
       },
     ],
   },
   devServer: {
     contentBase: path.join(__dirname, "public"),
     port: 9000,
-    publicPath: "/dist/",
   },
   plugins: [
     new HandlebarsPlugin({
       entry: path.join(__dirname, "src/pages", "*.hbs"),
       output: path.join(__dirname, "public", "[name].html"),
-      partials: [
-       path.join(__dirname, "src/organisms", "*.hbs")
-      ],
+      partials: [path.join(__dirname, "src/organisms", "*.hbs")],
     }),
   ],
 };
