@@ -41,7 +41,9 @@ public folder stays empty until a build is run.
 
 ## Next Steps
 
-- Add Medium to links
+- Add an About Me page
+  - picture at the top(either a banner, or a circle thing) 
+  - Include profile picture, but ignore it with aria. 
 - Investigate webpack tree shaking or bundle package analysis
 - Introduce TypeScript(bonus)
 - Add meta tags for sharing to various sites
