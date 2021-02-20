@@ -6,6 +6,7 @@
 
   Place for people to come and find out about what I do
   Place to filter and sort requests for work
+    - how can I make the recriuiter's job easier?
   Somewhere that I don't have to keep rebuilding every so often for sharing my CV
 
 ### What it don't do
