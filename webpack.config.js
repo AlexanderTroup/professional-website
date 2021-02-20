@@ -5,8 +5,8 @@ module.exports = {
   entry: path.join(__dirname, "src/index.js"),
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, "docs"),
+    publicPath: "/docs/",
     assetModuleFilename: "images/[name][ext][query]",
   },
   module: {
@@ -29,13 +29,13 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: path.join(__dirname, "docs"),
     port: 9000,
   },
   plugins: [
     new HandlebarsPlugin({
       entry: path.join(__dirname, "src/pages", "*.hbs"),
-      output: path.join(__dirname, "public", "[name].html"),
+      output: path.join(__dirname, "docs", "[name].html"),
       partials: [path.join(__dirname, "src/organisms", "*.hbs")],
     }),
   ],
