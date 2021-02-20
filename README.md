@@ -52,19 +52,23 @@ public folder stays empty until a build is run.
 
 ## Next Steps
 
-- Add an About Me page
-  - Some basic text describing who I am
-  - Make image go 100% of the screen width
-- Investigate webpack tree shaking or bundle package analysis
-- Introduce TypeScript(bonus)
 - Add meta tags for sharing to various sites
+  - sites
+    - Twitter
+    - Google
+    - LinkedIn
+    - Medium
+    - WhatsApp
+    - Pintrest
+    - Facebook ??
   - Static tags in the header to begin with
   - Per-page tags for once we have separate pages(Home, contact)
-
+    - allow for defaults, but with an option for custom overrides eg description
+- Investigate webpack tree shaking or bundle package analysis
+- Introduce TypeScript(bonus)
+- Add support for prefers-color-scheme <https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme> courtesy of op_scripter
 ## Pages
 
-Build and upload a basic website including a
-contact form,
-meta tags for social media(Fb, LinkedIn, Twitter, WhatsApp, Google) <https://css-tricks.com/essential-meta-tags-social-media/>
+Build and upload a basic website including a contact form, meta tags for social media(Fb, LinkedIn, Twitter, WhatsApp, Google, Medium) <https://css-tricks.com/essential-meta-tags-social-media/>
 (bonus1: make it a PWA)
 (bonus2: style my invoices similar to the site brand)

@@ -36,7 +36,12 @@ module.exports = {
     new HandlebarsPlugin({
       entry: path.join(__dirname, "src/pages", "*.hbs"),
       output: path.join(__dirname, "docs", "[name].html"),
-      partials: [path.join(__dirname, "src/organisms", "*.hbs")],
+      partials: [
+      path.join(__dirname, "src/atoms", "*.hbs"),
+      path.join(__dirname, "src/molecules", "*.hbs"),
+      path.join(__dirname, "src/organisms", "*.hbs"),
+      path.join(__dirname, "src/templates", "*.hbs"),
+      ],
     }),
   ],
 };

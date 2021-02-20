@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Alexander Troup</title>
-  <script src="main.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Alexander Troup</title>
+    <script src="main.js"></script>
+  </head>
 
-<body>
-  {{> organisms/navigation }}
-  <main class="container">Welcome to my site! </main>
-  {{> organisms/footer }}
-</body>
+  <body>
+    {{> organisms/navigation }}
+    <main class="container">
+      {{> molecules/text-with-header 
+          header-text="Connect with me" 
+          content="I'm active on Twitter, write articles on Medium, and stream over on Twitch."
+      }}
+      {{> molecules/text-with-header 
+          header-text="Work with me" 
+          content="I've been a professional for ten years working with clients big and small. Join me on LinkedIn and feel free to send my portfolio/skills map to clients you're working with. You can also contact me here."
+      }}
+      {{> molecules/text-with-header 
+          header-text="Invite me to your event" 
+          content="I'm here to share my experience with the world, and try making the world of tech a better place for it. If you're looking for speakers at your next event please reach out."
+      }}
+    </main>
+    {{> organisms/footer }}
+  </body>
 
 </html>
