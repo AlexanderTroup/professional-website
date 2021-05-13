@@ -64,6 +64,7 @@ public folder stays empty until a build is run.
   - Static tags in the header to begin with
   - Per-page tags for once we have separate pages(Home, contact)
     - allow for defaults, but with an option for custom overrides eg description
+
 - Investigate webpack tree shaking or bundle package analysis
 - Introduce TypeScript(bonus)
 - Add support for prefers-color-scheme <https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme> courtesy of op_scripter
